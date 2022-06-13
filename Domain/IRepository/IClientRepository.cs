@@ -1,11 +1,14 @@
-﻿using System;
+﻿using EvTecnicaGyS.Domain.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace EvTecnicaGyS.Domain.IRepository
 {
-    interface IClientRepository
+    public interface IClientRepository
     {
+        Task SaveClient(Client client);
+        Task UpdateClient(Client client);
     }
 }

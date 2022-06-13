@@ -1,4 +1,8 @@
+using EvTecnicaGyS.Domain.IRepository;
+using EvTecnicaGyS.Domain.IServices;
 using EvTecnicaGyS.Persistence.Context;
+using EvTecnicaGyS.Persistence.Repository;
+using EvTecnicaGyS.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -22,6 +26,8 @@ namespace EvTecnicaGyS
         {
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseMySql(Configuration.GetConnectionString("Conexion")));
+            services.AddScoped<IClientService, ClientService>();
+            services.AddScoped<IClientRepository, ClientRepository>();
             services.AddControllers();
         }
 

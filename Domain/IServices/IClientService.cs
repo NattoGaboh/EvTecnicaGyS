@@ -1,11 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using EvTecnicaGyS.Domain.Models;
+using System;
 using System.Threading.Tasks;
 
 namespace EvTecnicaGyS.Domain.IServices
 {
-    interface IClientService
+    public interface IClientService
     {
+        Task SaveClient(Client client);
+        Task UpdateClient(Client client);
     }
 }
