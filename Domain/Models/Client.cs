@@ -34,7 +34,7 @@ namespace EvTecnicaGyS.Domain.Models
         public string Estado { get; set; }
 
         [Column(TypeName = "varchar(100)")]
-        public DateTime GrupoFacturacion { get; set; }
+        public string GrupoFacturacion { get; set; }
 
         [Column(TypeName = "datetime")]
         public string InactivoDesde { get; set; }

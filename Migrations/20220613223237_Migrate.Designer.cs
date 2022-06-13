@@ -8,8 +8,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EvTecnicaGyS.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220613195827_Inicio")]
-    partial class Inicio
+    [Migration("20220613223237_Migrate")]
+    partial class Migrate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -35,7 +35,6 @@ namespace EvTecnicaGyS.Migrations
                         .HasColumnType("char(1)");
 
                     b.Property<string>("GrupoFacturacion")
-                        .IsRequired()
                         .HasColumnType("varchar(100)");
 
                     b.Property<string>("InactivoDesde")

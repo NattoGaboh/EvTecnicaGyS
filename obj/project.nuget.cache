@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "vlAuxHqK2RbaD99GVg0SzkRXdRXlpZibuE14SsrqjmoM4abXmvJAAaBs1W+5YZBzZitpoXawbqYrP/X+8ZRQGA==",
+  "dgSpecHash": "qhJReYuYvj4lz6JUDUJwD1Y8LrbkEGA8cBlzK+SJyVoGSB9vCh5+WKajPfmdJvlPd0Te5OTbQ8OkQXoa+a0cEA==",
   "success": true,
   "projectFilePath": "C:\\Users\\NattoGaboh\\source\\repos\\EvTecnicaGyS\\EvTecnicaGyS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\NattoGaboh\\.nuget\\packages\\fluentvalidation\\11.0.3\\fluentvalidation.11.0.3.nupkg.sha512",
     "C:\\Users\\NattoGaboh\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\NattoGaboh\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\NattoGaboh\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

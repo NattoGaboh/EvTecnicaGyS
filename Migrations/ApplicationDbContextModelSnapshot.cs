@@ -33,7 +33,6 @@ namespace EvTecnicaGyS.Migrations
                         .HasColumnType("char(1)");
 
                     b.Property<string>("GrupoFacturacion")
-                        .IsRequired()
                         .HasColumnType("varchar(100)");
 
                     b.Property<string>("InactivoDesde")
