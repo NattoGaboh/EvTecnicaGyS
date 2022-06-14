@@ -37,7 +37,7 @@ namespace EvTecnicaGyS.Domain.Models
         public string GrupoFacturacion { get; set; }
 
         [Column(TypeName = "datetime")]
-        public string InactivoDesde { get; set; }
+        public DateTime InactivoDesde { get; set; }
 
         [Column(TypeName = "varchar(20)")]
         public string CodigoSAP { get; set; }
