@@ -20,7 +20,7 @@ namespace EvTecnicaGyS.Controllers
         {
             _clientService = clientService;
         }
-        // GET: api/<ClientController>
+        // GET: api/Client
         [HttpGet]
         public async Task<IActionResult> Get()
         {
@@ -35,7 +35,7 @@ namespace EvTecnicaGyS.Controllers
             }
         }
 
-        // POST api/<ClientController>
+        // POST api/Client
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] Client client)
         {
@@ -59,7 +59,7 @@ namespace EvTecnicaGyS.Controllers
             }
         }
 
-        // PUT api/<ClientController>/5
+        // PUT api/Client/5
         [HttpPut("{codClient}")]
         public async Task<IActionResult> Put(string codClient,[FromBody] Client client)
         {
@@ -93,7 +93,7 @@ namespace EvTecnicaGyS.Controllers
             }
         }
 
-        // DELETE api/<ClientController>/5
+        // DELETE api/Client/5
         [HttpDelete("{codClient}")]
         public async Task<IActionResult> Delete(string codClient)
         {

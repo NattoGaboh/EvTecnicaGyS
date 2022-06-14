@@ -1,3 +1,4 @@
+using Amazon.S3;
 using EvTecnicaGyS.Domain.IRepository;
 using EvTecnicaGyS.Domain.IServices;
 using EvTecnicaGyS.Persistence.Context;
@@ -28,6 +29,7 @@ namespace EvTecnicaGyS
                 options.UseMySql(Configuration.GetConnectionString("Conexion")));
             services.AddScoped<IClientService, ClientService>();
             services.AddScoped<IClientRepository, ClientRepository>();
+            services.AddAWSService<IAmazonS3>();
             services.AddControllers();
         }
 
